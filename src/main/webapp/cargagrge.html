@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+  <style>
+    * {
+      font-family: montserrat;
+    }
+
+    .section-header {
+      margin-bottom: 40px;
+    }
+
+    .section-header h2 { 
+      color: #08194a;
+      font-size: 45px;
+      font-weight: 700;
+    }
+
+    .section-header h2 span {
+      color: #e53f29;
+    }
+
+    .navbar-nav a {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .navbar-light .navbar-brand {
+      color: #08194a;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .navbar-light .navbar-brand span {
+      color: #e53f29;
+    }
+
+    .section-padding {
+      padding: 80px 0;
+    }
+
+    .w-100 {
+      height: 100vh;
+    }
+
+    .navbar-toggler {
+      padding: 1px 5px;
+      font-size: 18px;
+      line-height: 0.3;
+      background: #fff;
+    }
+
+    .carousel {
+     background-image: url(images/woman-7063830.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 300px;
+    }
+
+    .carousel-caption {
+      bottom: 220px;
+      z-index: 2;
+      left: 8%;
+    }
+
+    .carousel-caption h5 {
+      font-size: 45px;
+      margin-top: 25px;
+      color: yellow;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .carousel-caption h5 span {
+      color: #e53f29;
+    }
+
+    .carousel-caption p {
+      width: 60%;
+      font-size: 18px;
+      line-height: 1.8;
+      color: skyblue;
+      text-align: left;
+    }
+
+    .carousel-caption a {
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #08194a;
+      padding: 5px 20px;
+      display: inline-block;
+      color: #fff;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+
+    .img-area img {
+      width: 100% !important;
+    }
+
+    .about-text h2 {
+      font-size: 45px;
+      font-weight: 700;
+      color: #08194a;
+    }
+
+    .about-text h2 span {
+      color: #e53f29;
+    }
+
+    .about-text .btn {
+      background: #08194a;
+      color: yellow;
+    }
+    .single-services
+    {
+      background: #08194a;
+      color: #fff;
+      padding: 30px 15px;
+    }
+    .single-services i
+    {
+      font-size: 45px;
+      margin-bottom: 30px;
+
+    }
+    .single-services h2
+    {
+      font-family: bebas neue;
+    }
+
+
+    .choose-img img
+    {
+      width: 80%;
+
+    }
+    .single-box
+    {
+      padding: 20px;
+    }
+    .single-box i
+  {
+     font-family: 35px;
+     margin-bottom: 25px;
+    color: #e53f29; 
+  }
+  .single-box h2
+  {
+    font-family: bebas neue;
+    color: #08194a;
+  }
+    .imgbox
+    {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 0 auto 25px;
+    }
+    .imgbox img
+    {
+      width: 100%;
+    }
+    .single-client
+    {
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+      padding: 30px 15px    ;
+    }
+    .single-client h2
+    {
+      color: #08194a;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .single-client h5 span
+    {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+     .left-contact
+     {
+        background: #08194a;
+        padding: 60px;
+        color: #fff;
+    }
+    .left-contact h3
+    {
+      font-family: bebas neue;
+      margin-top: 20px;
+    }
+    label{
+      font-family: bebas neue;
+      font-size: 28px;
+      margin: 10px 0;
+    }
+    .contact .btn
+    {
+      background: #08194a;
+      color: #fff;
+      display: -moz-inline-box;
+      margin-top: 30px;
+      
+    }
+    footer
+    {
+      background: #08194a;
+      padding: 35px 0;
+      color: #fff;
+    }
+    .socials a img
+    {
+      font-size: 25px;
+      margin: 0 15px;
+    }
+
+       @media only screen and (min-width: 760) and (max-width:991px)
+       {
+        .about-text h2
+        {
+          margin: 20px;
+        }
+         .single-services
+         {
+          margin-bottom: 30px;
+         }
+         .single-box
+         {
+          margin-bottom: 30px;
+         }
+         .single-client
+         {
+          margin-bottom: 35px;
+         }
+          .left-contact
+          {
+            margin-bottom: 30px;
+          }
+       }
+       @media only screen and (max-width: 767px)
+       {
+        .navbar-nav
+        {
+          text-align: center;
+        }
+       }
+  </style>;
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><span>Fullstack</span>Garagewala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About us">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#choice">WHY US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Login">LOGIN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div id="carouselExampleCaptions" data-bs-ride="carousel" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption">
+          <h5 class="animated fadeInDown" style="animation-delay:1s">Long <span>Warranty</span></h5>
+          <p class="animated fadeInup" style="animation-delay: 2s;">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Sit deserunt, ex iure suscipit esse consequuntur.</p>
+          <p class="animated fadeInUp" style="animation-delay: 3s;"><a href="#">Learn more</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption">
+          <h5 class="animated fadeInDown" style="animation-delay:1s">Qualified <span>Technicians</span></h5>
+          <p class="animated fadeInup" style="animation-delay: 2s;">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Sit deserunt, ex iure suscipit esse consequuntur.</p>
+          <p class="animated fadeInUp" style="animation-delay: 3s;"><a href="#">Learn more</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption">
+          <h5 class="animated fadeInDown" style="animation-delay:1s">Competitive <span>Pricies</span></h5>
+          <p class="animated fadeInup" style="animation-delay: 2s;">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Sit deserunt, ex iure suscipit esse consequuntur.</p>
+          <p class="animated fadeInUp" style="animation-delay: 3s;"><a href="/sk">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="about-area section-padding" id="about us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="img-area">
+            <img src="images/auto-repair-3691963.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="about-text">
+            <h2>WE ARE <span>TRUSTED</span>REPIAR CENTER</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor dolores, sapiente adipisci doloremque
+              maiores fuga nobis eos, dolore error perspiciatis tempora esse sed fugiat nostrum fugit odio illum
+              voluptas? Excepturi minus nihil quis nemo similique quaerat unde, consequatur fuga eum ut accusamus qui
+              nam, rerum dolor non cum molestias odio est aperiam vel. Quos hic nostrum alias distinctio est architecto
+              ex minus sapiente magni dolores fuga dolorem molestias et aperiam rerum dolorum vel, facere velit ea
+              laborum unde itaque nemo culpa? Perspiciatis ipsa praesentium veniam earum quidem modi, quisquam dolorum
+              consequuntur nobis ea suscipit nihil harum at libero, dolore iusto reiciendis porro debitis molestias
+              similique dignissimos. Odio placeat numquam ipsum ut architecto tempora optio dolorem.</p>
+            <A href="/service.html" class="btn">Contact us</A>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+     <div class="services section-padding" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <h2>OUR<span>SERVICE</span></h2>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
+            <div class="single-services text-center">
+              <img src="images/automobile.png" style="width: 32px; height: 32px;">
+              <h2>AUTOMOBILE</h2>Automobile Repair
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos .</p>
+            </div>
+          </div><div class="col-lg-3 col-md-6 col-sm-6 pb-1">
+            <div class="single-services text-center">
+              <img src="images/fix.png" style="width: 32px; height: 32px;">
+              <h2>BRAKE REPAIR</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos autem possimus? Harum, dolore accusamus.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
+            <div class="single-services text-center">
+              <img src="images/adjust.png" style="width: 32px; height: 32px;">
+              <h2>EXHAUST GAS</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos autem possimus? Harum, dolore accusamus.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-services text-center">
+              <img src="images/car.png" style="width: 32px; height: 32px;">
+              <h2>CAR RAMP</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos autem possimus? Harum, dolore accusamus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+          
+
+         <div class="choice section-padding" id="choose">
+          <div class="container">
+            <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <h2>Why <span>Choice Us?</span></h2>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="choice-area text-center">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="single-box">
+                    <img src="images/company.png" style="width: 32px; height: 32px;">
+                    <h2>Best Company</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="single-box">
+                    <img src="images/equipment.png" style="width: 32px; height: 32px;">
+                    <h2>Best Equipment</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="single-box">
+                    <img src="images/service.png" style="width: 32px; height: 32px;">
+                    <h2>Quality Service</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="single-box">
+                    <img src="images/warranty.png" style="width: 32px; height: 32px;">
+                    <h2>Long Warranty</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+
+           <div class="col-lg-5 col-sm-12">
+            <div class="choice">
+              <img src="images/emp2.jpg" alt="" class="img-fluid">
+            </div>
+           </div>
+        </div>
+          </div>
+         </div>
+
+         <div class="textimonial section-padding" id="testi">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 pb-1">
+                <div class="section-header text-center">
+                  <h2>Client's<span>Comments</span></h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-sm-12 pb-2">
+                <div class="single-client text-center">
+                  <div class="imgbox">
+                    <img src="images/car-mechanic-2267350.jpg" alt="">
+                  </div>
+                    <h2>john doe</h2>
+                    <p><i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, expedita dolores nesciunt illo porro quos!"</i></p>
+                    <h5>HR Manager <br> <span>ABC Company</span></h5>
+                </div>
+              </div>
+
+                <div class="col-lg-4 col-sm-12 pb-2">
+                  <div class="single-client text-center">
+                    <div class="imgbox">
+                      <img src="images/vintage-1950s-887272.jpg" alt="">
+                    </div>
+                      <h2>Alex carry</h2>
+                      <p><i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, expedita dolores nesciunt illo porro quos!"</i></p>
+                      <h5>Acccount Manager <br> <span>XYZ Company</span></h5>
+                  </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-sm-12">
+                    <div class="single-client text-center">
+                      <div class="imgbox">
+                        <img src="images/car-970353.jpg" alt="">
+                      </div>
+                        <h2>josan qwalker</h2>
+                        <p><i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, expedita dolores nesciunt illo porro quos!"</i></p>
+                        <h5>chef mana <br> <span>ABC Company</span></h5> 
+                    </div>
+                    
+          </div>
+                 
+         </div>
+              </div>
+            </div>
+
+
+            <div class="contact section-padding" id="Contact">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="section-header text-center">
+                      <h2>Contact<span> us</span></h2>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-5 col-sm-12"> 
+                    <div class="left-contact">
+                      <h3>Location:</h3>
+                      <P>123,Warje Malwadi,Pune <br>Maharashtra ,India</P>
+                      <h3>Email:</h3>
+                      <P>FullstackGaragewala@gmail.com</P>
+                      <h  > contact us</h3>
+                      <P>0000 0000 00</P>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-6 offset-lg-1 col-sm-12">
+                    <form action="ContactUs">
+                        <label for="">Your Name</label>
+                      <input type="text"  class="form-control" name="uname" placeholder="your Email" required>
+                      <label for="">Your Email</label>
+                      <input type="text"  class="form-control" name="umail" placeholder="your Email" required>
+                      <label for="">Your Message</label>
+                      <textarea class="form-control" name="utext" placeholder="Your massage"></textarea>
+                      <button class="btn" type="submit">Submit From </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <footer>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="footer-content text-center">
+                      <p> All Right Reserved </p>
+                      <p class="socials">
+                        <a href="#"><img src="images/whatsapp.png" style="width: 32px; height: 32px;"></a>
+                        <a href="#"><img src="images/facebook.png" style="width: 32px; height: 32px;"></a>
+                        <a href="#"><img src="images/Instagram.png" style="width: 32px; height: 32px;"></a>
+                        <a href="#"><img src="images/twitterx.png" style="width: 32px; height: 32px;"></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
